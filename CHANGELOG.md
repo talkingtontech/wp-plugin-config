@@ -1,3 +1,10 @@
+## 1.0.0
+
+- Forked from WP Site Care
+- Changed code style and new lines
+- Updated package.json
+- Updated deps
+
 ## 0.1.4
 
 - Fixed the JS paths to prevent recursion when running the watch command

@@ -7,7 +7,7 @@ module.exports = {
 	},
 	bowercomponents: {
 		src: [
-			'bower_components'
+			'bower_components/'
 		]
 	},
 	css: {
@@ -52,5 +52,4 @@ module.exports = {
 			'<%= paths.release %>'
 		]
 	}
-
 };

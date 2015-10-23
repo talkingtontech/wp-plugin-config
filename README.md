@@ -1,5 +1,3 @@
-# WP Site Care WordPress Plugin Config
+# Talkington Tech WordPress Plugin Config
 
-[![Dependency Status](https://david-dm.org/wpsitecare/sitecare-plugin-config.svg)](https://david-dm.org/wpsitecare/sitecare-plugin-config)
-
-A reusable grunt configuration for WP Site Care WordPress plugins.
+A reusable grunt configuration for Talkington Tech WordPress plugins.

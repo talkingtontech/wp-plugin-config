@@ -1,5 +1,6 @@
 module.exports = function() {
 	'use strict';
+
 	var tasks = {
 		'build': [
 			'clean',
@@ -27,12 +28,6 @@ module.exports = function() {
 			'addtextdomain',
 			'makepot',
 			'newer:copy:languages'
-		],
-		'newplugin': [
-			'copy:rename',
-			'replace:packagename',
-			'readpkg',
-			'build'
 		],
 		'release': [
 			'build',
