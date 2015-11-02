@@ -1,3 +1,7 @@
+## 1.0.3
+
+- fix syntax error in last release.
+
 ## 1.0.2
 
 - config: add paths.composer and clean it.
