@@ -5,6 +5,7 @@ module.exports = function() {
 		'build': [
 			'clean',
 			'shell:bower',
+			'build:dependencies:php',
 			'build:fonts',
 			'build:css',
 			'build:images',
@@ -21,7 +22,8 @@ module.exports = function() {
 		'build:dependencies': [
 			'build:dependencies:css',
 			'build:dependencies:fonts',
-			'build:dependencies:js'
+			'build:dependencies:js',
+			'build:dependencies:php'
 		],
 		'build:i18n': [
 			'clean:languages',

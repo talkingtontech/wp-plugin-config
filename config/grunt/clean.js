@@ -29,6 +29,11 @@ module.exports = {
 			'<%= paths.fontSrc %>vendor/'
 		]
 	},
+	php: {
+    src: [
+      'includes/vendor/'
+    ]
+  },
 	tmp: {
 		src: [
 			'<%= paths.tmp %>'
