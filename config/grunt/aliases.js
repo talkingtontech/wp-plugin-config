@@ -32,6 +32,7 @@ module.exports = function() {
 		'release': [
 			'build',
 			'copy:release'
+			'compress:release'
 		],
 		'default': [
 			'watch'
