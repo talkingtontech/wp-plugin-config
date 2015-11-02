@@ -1,3 +1,11 @@
+## 1.0.1
+
+- deps: updated to grunt-contrib-compress@0.14.x.
+- deps: updated to grunt-contrib-uglify@0.10.x.
+- deps: updated to grunt-sass@1.1.x.
+- deps: updated to grunt-webfont@1.0.x.
+- config: update autoprefixer to include Microsoft Edge Browser.
+
 ## 1.0.0
 
 - Forked from WP Site Care
