@@ -1,3 +1,7 @@
+## 1.0.2
+
+- config: add paths.composer and clean it.
+
 ## 1.0.1
 
 - deps: updated to grunt-contrib-compress@0.14.x.
