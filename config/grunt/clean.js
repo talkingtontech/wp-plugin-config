@@ -10,6 +10,11 @@ module.exports = {
 			'bower_components/'
 		]
 	},
+	composer: {
+    src: [
+      '<%= paths.composer %>'
+    ]
+  },
 	css: {
 		src: [
 			'css/*',

@@ -16,6 +16,7 @@ module.exports = function() {
 		fontSrc:   'font/src/',
 		imagesSrc: 'images/src/',
 		bower:     'bower/',
+		composer:  'includes/vendor/',
 		grunt:     'config/grunt/',
 		tasks:     'tasks/'
 	};
