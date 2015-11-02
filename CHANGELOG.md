@@ -1,3 +1,7 @@
+## 1.0.4
+
+- config: build php dependencies.
+
 ## 1.0.3
 
 - fix syntax error in last release.
