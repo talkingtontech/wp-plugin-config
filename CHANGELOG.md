@@ -1,3 +1,7 @@
+## 1.0.6
+
+- config: exclude composer files from makepot.
+
 ## 1.0.5
 
 - cleanup rogue tab indents.
