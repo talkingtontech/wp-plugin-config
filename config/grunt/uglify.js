@@ -2,6 +2,7 @@
 module.exports = {
   plugin: {
     options: {
+      preserveComments: /^!/,
       sourceMap: false,
       mangle: true,
       compress: true,
