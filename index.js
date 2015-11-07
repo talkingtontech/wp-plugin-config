@@ -59,6 +59,8 @@ module.exports = function() {
     '!js/**',
     '!languages/**',
     '!bower_components/**',
+    '!bower/**',
+    '!composer/**',
     '!node_modules/**',
     '!tmp/**'
   ];
