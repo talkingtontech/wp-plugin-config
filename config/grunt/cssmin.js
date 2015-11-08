@@ -4,7 +4,7 @@ module.exports = {
     report: 'gzip',
     sourceMap: false
   },
-  style: {
+  plugin: {
     expand: true,
     cwd: '<%= paths.tmp %>',
     src: [

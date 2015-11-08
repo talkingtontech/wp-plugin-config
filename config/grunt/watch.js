@@ -21,7 +21,7 @@ module.exports = {
       'postcss',
       'wpcss:css',
       'rtlcss',
-      'cssmin:style',
+      'cssmin:plugin',
       'replace:style',
       'copy:css'
     ]
