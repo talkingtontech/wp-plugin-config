@@ -22,7 +22,7 @@ module.exports = {
       '*.css',
       '!*.min.css'
     ],
-    dest: 'css/',
+    dest: '<%= paths.cssSrc %>vendor/',
     ext: '.min.css',
     extDot: 'last'
   }
