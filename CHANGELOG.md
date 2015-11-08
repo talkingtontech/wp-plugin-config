@@ -1,3 +1,8 @@
+## 1.0.8
+
+- config: fix some missed references to nameDashed.
+- config: run build:css:nodeps on scss change to allow for a quicker controllable build.
+
 ## 1.0.7
 
 - exclude bower and composer files from addtextdomain.
