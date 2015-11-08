@@ -1,3 +1,7 @@
+## 1.0.10
+
+- config: adjust to whitelist css/src/vendor/ specifically.
+
 ## 1.0.9
 
 - config: only exclude scss files as there could be vendor css. exclude bower/ and composer/.
