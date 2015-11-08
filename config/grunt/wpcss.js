@@ -6,8 +6,8 @@ module.exports = {
   css: {
     expand: true,
     src: [
-      '<%= paths.tmp %><%= pkg.nameDashed %>.css',
-      '<%= paths.tmp %><%= pkg.nameDashed %>-admin.css'
+      '<%= paths.tmp %><%= pkg.name %>.css',
+      '<%= paths.tmp %><%= pkg.name %>-admin.css'
     ]
   }
 };
