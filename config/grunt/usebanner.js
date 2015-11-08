@@ -3,7 +3,7 @@ module.exports = {
   plugin: {
     options: {
       position: 'top',
-      banner: '/**!\n' +
+      banner: '/*!\n' +
         ' * Plugin Name: <%= pkg.plugin.name %>\n' +
         ' * Version:     <%= pkg.version %>\n' +
         ' * Author:      <%= pkg.plugin.author %>\n' +
@@ -14,7 +14,7 @@ module.exports = {
     files: [
       {
         cwd: '<%= paths.tmp %>',
-        src: '<%= pkg.nameDashed %>.css',
+        src: '<%= pkg.name %>.css',
         dest: '<%= paths.tmp %>',
         expand: true
       }
@@ -23,7 +23,7 @@ module.exports = {
   adminStyle: {
     options: {
       position: 'top',
-      banner: '/**!\n' +
+      banner: '/*!\n' +
         ' * <%= pkg.plugin.name %> Admin Styles\n' +
         ' * Version: <%= pkg.version %>\n' +
         ' */\n',
@@ -32,7 +32,7 @@ module.exports = {
     files: [
       {
         cwd: '<%= paths.tmp %>',
-        src: 'admin-<%= pkg.nameDashed %>.css',
+        src: '<%= pkg.name %>-admin.css',
         dest: '<%= paths.tmp %>',
         expand: true
       }
