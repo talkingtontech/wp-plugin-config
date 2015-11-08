@@ -1,3 +1,12 @@
+## 1.0.7
+
+- exclude bower and composer files from addtextdomain.
+- config: preserve elevated comments during uglify.
+- config: adjust naming of cssmin:style task to match uglify naming.
+- config: fix some missed references to nameDashed.
+- config: ensure that cssmin places minified vendor css next to existing file for script loader.
+- deps: update to autoprefixer@6.1.x.
+
 ## 1.0.6
 
 - config: exclude composer files from makepot.
