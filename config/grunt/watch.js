@@ -16,14 +16,7 @@ module.exports = {
       '<%= files.scss %>'
     ],
     tasks: [
-      'sass:plugin',
-      'usebanner:plugin',
-      'postcss',
-      'wpcss:css',
-      'rtlcss',
-      'cssmin:plugin',
-      'replace:style',
-      'copy:css'
+      'build:css'
     ]
   }
 };
