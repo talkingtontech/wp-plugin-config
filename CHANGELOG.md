@@ -1,3 +1,7 @@
+## 1.0.9
+
+- config: only exclude scss files as there could be vendor css. exclude bower/ and composer/.
+
 ## 1.0.8
 
 - config: fix some missed references to nameDashed.
