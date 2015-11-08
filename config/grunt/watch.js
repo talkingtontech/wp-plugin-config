@@ -16,7 +16,7 @@ module.exports = {
       '<%= files.scss %>'
     ],
     tasks: [
-      'build:css'
+      'build:css:nodeps'
     ]
   }
 };
