@@ -1,3 +1,7 @@
+## 1.0.11
+
+- deps: updated to grunt-contrib-imagemin@1.0.x.
+
 ## 1.0.10
 
 - config: adjust to whitelist css/src/vendor/ specifically.
