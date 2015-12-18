@@ -1,6 +1,6 @@
 {
   "name": "ttech-wp-plugin-config",
-  "version": "1.0.15",
+  "version": "1.1.0",
   "description": "Talkington Tech's default Grunt configuration for WordPress plugins.",
   "main": "index.js",
   "license": "MIT",

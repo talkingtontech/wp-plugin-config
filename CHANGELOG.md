@@ -1,3 +1,7 @@
+## 1.1.0
+
+- drop grunt-webfont.
+
 ## 1.0.15
 
 - deps: downgrade to grunt-webfont@0.5.x.
