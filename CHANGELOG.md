@@ -1,3 +1,9 @@
+## 1.0.12
+
+- deps: update to grunt-contrib-clean@0.7.x.
+- deps: update to grunt-contrib-uglify@0.11.x.
+- deps: update to grunt-webfont@1.1.x.
+
 ## 1.0.11
 
 - deps: updated to grunt-contrib-imagemin@1.0.x.
