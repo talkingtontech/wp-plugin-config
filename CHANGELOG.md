@@ -1,3 +1,7 @@
+## 1.0.13
+
+- deps: downgrade to grunt-webfont@0.5.x.
+
 ## 1.0.12
 
 - deps: update to grunt-contrib-clean@0.7.x.
