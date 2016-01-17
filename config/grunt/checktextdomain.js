@@ -1,7 +1,7 @@
 // https://github.com/stephenharris/grunt-checktextdomain
 module.exports = {
   options: {
-    text_domain: '<%= pkg.plugin.textdomain %>',
+    text_domain: '<%= package.textdomain %>',
     keywords: [
       '__:1,2d',
       '_e:1,2d',

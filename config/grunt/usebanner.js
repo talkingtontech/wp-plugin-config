@@ -4,17 +4,17 @@ module.exports = {
     options: {
       position: 'top',
       banner: '/*!\n' +
-        ' * Plugin Name: <%= pkg.plugin.name %>\n' +
-        ' * Version:     <%= pkg.version %>\n' +
-        ' * Author:      <%= pkg.plugin.author %>\n' +
-        ' * License:     <%= pkg.plugin.license %>\n' +
+        ' * Plugin Name: <%= package.nameHuman %>\n' +
+        ' * Version:     <%= package.version %>\n' +
+        ' * Author:      <%= package.author.name %>\n' +
+        ' * License:     <%= package.license %>\n' +
         ' */\n',
       linebreak: true
     },
     files: [
       {
         cwd: '<%= paths.tmp %>',
-        src: '<%= pkg.name %>.css',
+        src: '<%= package.name %>.css',
         dest: '<%= paths.tmp %>',
         expand: true
       }
@@ -24,15 +24,15 @@ module.exports = {
     options: {
       position: 'top',
       banner: '/*!\n' +
-        ' * <%= pkg.plugin.name %> Admin Styles\n' +
-        ' * Version: <%= pkg.version %>\n' +
+        ' * <%= package.nameHuman %> Admin Styles\n' +
+        ' * Version: <%= package.version %>\n' +
         ' */\n',
       linebreak: true
     },
     files: [
       {
         cwd: '<%= paths.tmp %>',
-        src: '<%= pkg.name %>-admin.css',
+        src: '<%= package.name %>-admin.css',
         dest: '<%= paths.tmp %>',
         expand: true
       }

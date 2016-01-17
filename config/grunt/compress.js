@@ -2,7 +2,7 @@
 module.exports = {
   release: {
     options: {
-      archive: '<%= paths.release %><%= pkg.name %>-<%= pkg.version %>.zip'
+      archive: '<%= paths.release %><%= package.name %>-<%= package.version %>.zip'
     },
     files: [
       {
@@ -32,7 +32,7 @@ module.exports = {
           '!gruntfile.js',
           '!package.json'
         ],
-        dest: '<%= pkg.name %>'
+        dest: '<%= package.name %>'
       }
     ]
   }
