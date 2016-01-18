@@ -1,3 +1,15 @@
+## 1.2.0
+
+- use textdomain property from root of package.json.
+- use default options for cssmin.
+- deps: add grunt-version@1.0.x.
+- deps: update to autoprefixer@6.2.x.
+- deps: drop checktextdomain.
+- deps: drop grunt-wp-css.
+- swap pkg for package as load-grunt-config already reads the package file upfront.
+- add release tasks that utilize grunt-version.
+- fix readpkg mapping.
+
 ## 1.1.0
 
 - drop grunt-webfont.
