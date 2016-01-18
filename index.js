@@ -2,14 +2,14 @@
 module.exports = function() {
   'use strict';
 
-  var path = require( 'path' ),
-    project = {};
+  var path = require('path');
+  var project = {};
 
   project.paths = {
     config:    'config/',
     assets:    'assets/',
+    dist:      'dist/',
     languages: 'languages/',
-    release:   'release/',
     tmp:       'tmp/',
     jsSrc:     'js/src/',
     cssSrc:    'css/src/',

@@ -3,6 +3,7 @@ module.exports = function() {
 
   var tasks = {
     'build': [
+      'readpkg',
       'clean',
       'shell:bower',
       'build:dependencies:php',
@@ -31,13 +32,32 @@ module.exports = function() {
       'makepot',
       'newer:copy:languages'
     ],
-    'release': [
-      'build',
-      'copy:release',
-      'compress:release'
-    ],
     'default': [
       'watch'
+    ],
+    'package': [
+      'build',
+      'compress'
+    ],
+    'package:dist': [
+      'build',
+      'compress:dist'
+    ],
+    'package:dev': [
+      'build',
+      'compress:dev'
+    ],
+    'release:major': [
+      'version::major',
+      'package'
+    ],
+    'release:minor': [
+      'version::minor',
+      'package'
+    ],
+    'release:patch': [
+      'version::patch',
+      'package'
     ]
   };
 
