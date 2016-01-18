@@ -10,13 +10,5 @@ module.exports = {
       'package.json',
       'bower.json'
     ]
-  },
-  style: {
-    options: {
-      prefix: '\\s+\\*\\s+Version:\\s+'
-    },
-    src: [
-      '<%= paths.authorAssets %>scss/style.scss'
-    ]
   }
 };
