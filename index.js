@@ -22,17 +22,16 @@ module.exports = function() {
   };
 
   project.paths.global = {
-    config: path.join( __dirname, 'config/' ),
-    grunt:  path.join( __dirname, 'config/grunt/' ),
-    tasks:  path.join( __dirname, 'tasks/' )
+    config: path.join(__dirname, 'config/'),
+    grunt:  path.join(__dirname, 'config/grunt/'),
+    tasks:  path.join(__dirname, 'tasks/')
   };
 
   project.taskMap = {
     addtextdomain: 'grunt-wp-i18n',
-    readpkg:       'sitecare-plugin-config',
     makepot:       'grunt-wp-i18n',
-    usebanner:     'grunt-banner',
-    wpcss:         'grunt-wp-css'
+    readpkg:       'ttech-plugin-config',
+    usebanner:     'grunt-banner'
   };
 
   project.files = {
