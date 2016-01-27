@@ -1,3 +1,7 @@
+## 1.2.2
+
+- adjust clean:release to proper clean:dist.
+
 ## 1.2.1
 
 - fix taskMap for readpkg.
