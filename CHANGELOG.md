@@ -1,3 +1,7 @@
+## 1.2.1
+
+- fix taskMap for readpkg.
+
 ## 1.2.0
 
 - use textdomain property from root of package.json.
