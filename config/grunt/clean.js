@@ -22,6 +22,11 @@ module.exports = {
       '<%= paths.cssSrc %>vendor/'
     ]
   },
+  dist: {
+    src: [
+      '<%= paths.dist %>'
+    ]
+  },
   fonts: {
     src: [
       'font/*',
@@ -55,11 +60,6 @@ module.exports = {
   languages: {
     src: [
       '<%= paths.languages %>*.pot'
-    ]
-  },
-  release: {
-    src: [
-      '<%= paths.release %>'
     ]
   }
 };
