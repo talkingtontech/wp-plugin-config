@@ -1,3 +1,9 @@
+## 1.3.0
+
+- make use of assets folder for bower and composer.
+- more granular cleaning of the js dir.
+- set default options for sass.
+
 ## 1.2.2
 
 - adjust clean:release to proper clean:dist.
