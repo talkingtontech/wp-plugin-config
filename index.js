@@ -15,8 +15,8 @@ module.exports = function() {
     cssSrc:    'css/src/',
     fontSrc:   'font/src/',
     imagesSrc: 'images/src/',
-    bower:     'bower/',
-    composer:  'composer/',
+    bower:     'assets/bower/',
+    composer:  'assets/composer/',
     grunt:     'config/grunt/',
     tasks:     'tasks/'
   };
@@ -51,14 +51,12 @@ module.exports = function() {
     '!.sass-cache/**',
     '!assets/**',
     '!css/**',
-    '!release/**',
+    '!dist/**',
     '!fonts/**',
     '!images/**',
     '!js/**',
     '!languages/**',
     '!bower_components/**',
-    '!bower/**',
-    '!composer/**',
     '!node_modules/**',
     '!tmp/**'
   ];

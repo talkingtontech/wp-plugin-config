@@ -12,17 +12,15 @@ module.exports = {
           '.*',
           '!.git/**',
           '!.sass-cache/**',
-          '!.jscsrc',
-          '!.jshintrc',
+          '!assets/**',
           '!config/**',
           '!dist/**',
+          '!logs/**',
+          '!node_modules/**',
+          '!tmp/**',
           '!css/src/**',
           'css/src/vendor/**',
           '!bower_components/**',
-          '!bower/**',
-          '!composer/**',
-          '!node_modules/**',
-          '!tmp/**',
           '!*.json',
           '!*.sublime*',
           '!.DS_Store',
@@ -30,7 +28,9 @@ module.exports = {
           '!.gitignore',
           '!composer.lock',
           '!gruntfile.js',
-          '!package.json'
+          '!package.json',
+          '!.jscsrc',
+          '!.jshintrc'
         ],
         dest: '<%= package.name %>'
       }
