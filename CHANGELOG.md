@@ -1,3 +1,7 @@
+## 1.3.1
+
+- deps: really add grunt-version@1.0.x.
+
 ## 1.3.0
 
 - make use of assets folder for bower and composer.
