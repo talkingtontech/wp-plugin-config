@@ -1,3 +1,13 @@
+## 1.4.0
+
+- publish to npm registry.
+- deps: update to grunt-contrib-clean@1.0.x.
+- deps: update to grunt-contrib-compress@1.0.x.
+- deps: update to grunt-contrib-concat@1.0.x.
+- deps: update to grunt-contrib-jshint@1.0.x.
+- deps: update to grunt-potomo@3.4.x.
+- deps: update to grunt-rtlcss@2.0.x.
+
 ## 1.3.1
 
 - deps: really add grunt-version@1.0.x.
