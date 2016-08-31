@@ -18,7 +18,6 @@ module.exports = {
   css: {
     src: [
       'css/*',
-      '!<%= paths.cssSrc %>**',
       '<%= paths.cssSrc %>vendor/'
     ]
   },

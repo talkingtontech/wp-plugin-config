@@ -12,7 +12,7 @@ module.exports = function() {
     languages: 'languages/',
     tmp:       'tmp/',
     jsSrc:     'js/src/',
-    cssSrc:    'css/src/',
+    cssSrc:    'scss/',
     fontSrc:   'font/src/',
     imagesSrc: 'images/src/',
     bower:     'assets/bower/',
