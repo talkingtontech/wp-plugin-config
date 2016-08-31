@@ -1,3 +1,8 @@
+## 1.5.0
+
+- scss directory moved up and out of css/src to scss/.
+- deps: now using semver caret (^).
+
 ## 1.4.0
 
 - publish to npm registry.
