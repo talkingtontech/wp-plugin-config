@@ -4,17 +4,21 @@ module.exports = {
     swapLeftRightInUrl: false,
     swapLtrRtlInUrl: false,
     autoRename: false,
-    preserveDirectives: true
+    preserveDirectives: true,
+    map: false
   },
   plugin: {
     expand: true,
-    cwd: '<%= paths.tmp %>',
+    cwd: '<%= paths.cssDist %>',
     src: [
       '*.css',
+      '**/*.css',
       '!*-rtl.css',
-      '!*.min.css'
+      '!**/*-rtl.css',
+      '!*.min.css',
+      '!**/*.min.css'
     ],
-    dest: '<%= paths.tmp %>',
+    dest: '<%= paths.cssDist %>',
     ext: '-rtl.css',
     extDot: 'last'
   }

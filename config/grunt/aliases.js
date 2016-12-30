@@ -3,28 +3,17 @@ module.exports = function() {
 
   var tasks = {
     'build': [
-      'readpkg',
       'clean',
-      'shell:bower',
-      'build:dependencies:php',
       'build:fonts',
       'build:css',
       'build:images',
       'build:js',
-      'clean:bowercomponents',
       'build:i18n'
-    ],
-    'build:dev': [
-      'build:fonts',
-      'build:css',
-      'build:images',
-      'build:js'
     ],
     'build:dependencies': [
       'build:dependencies:css',
       'build:dependencies:fonts',
-      'build:dependencies:js',
-      'build:dependencies:php'
+      'build:dependencies:js'
     ],
     'build:i18n': [
       'clean:languages',
@@ -32,32 +21,28 @@ module.exports = function() {
       'makepot',
       'newer:copy:languages'
     ],
-    'default': [
-      'watch'
-    ],
     'package': [
       'build',
       'compress'
     ],
-    'package:dist': [
+    'release': [
       'build',
-      'compress:dist'
-    ],
-    'package:dev': [
-      'build',
-      'compress:dev'
+      'copy:release'
     ],
     'release:major': [
       'version::major',
-      'package'
+      'release'
     ],
     'release:minor': [
       'version::minor',
-      'package'
+      'release'
     ],
     'release:patch': [
       'version::patch',
-      'package'
+      'release'
+    ],
+    'default': [
+      'watch'
     ]
   };
 

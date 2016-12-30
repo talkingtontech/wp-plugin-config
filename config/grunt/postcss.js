@@ -3,8 +3,9 @@ var autoprefixer = require( 'autoprefixer' );
 
 module.exports = {
   options: {
+    map: false,
     processors: [
-      autoprefixer({
+      autoprefixer( {
         browsers: [
           'Android >= 2.1',
           'Chrome >= 21',
@@ -14,18 +15,19 @@ module.exports = {
           'Opera >= 12.1',
           'Safari >= 6.0'
         ]
-      })
-    ],
-    map: false
+      } )
+    ]
   },
   plugin: {
     expand: true,
-    cwd: '<%= paths.tmp %>',
+    cwd: '<%= paths.cssDist %>',
     src: [
       '*.css',
-      '!*.min.css'
+      '**/*.css',
+      '!*.min.css',
+      '!**/*.min.css'
     ],
-    dest: '<%= paths.tmp %>',
+    dest: '<%= paths.cssDist %>',
     ext: '.css',
     extDot: 'last'
   }

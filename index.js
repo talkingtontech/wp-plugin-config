@@ -6,25 +6,30 @@ module.exports = function() {
   var project = {};
 
   project.paths = {
-    config:    'config/',
-    assets:    'assets/',
-    dist:      'dist/',
-    languages: 'languages/',
-    tmp:       'tmp/',
-    jsSrc:     'js/src/',
-    cssSrc:    'scss/',
-    fontSrc:   'font/src/',
-    imagesSrc: 'images/src/',
-    bower:     'assets/bower/',
-    composer:  'assets/composer/',
-    grunt:     'config/grunt/',
-    tasks:     'tasks/'
+    config:     'config/',
+    assets:     'assets/',
+    languages:  'languages/',
+    release:    'release/',
+    jsSrc:      'js/src/',
+    jsVend:     'js/src/vendor/',
+    jsDist:     'js/dist/',
+    cssSrc:     'css/src/',
+    cssVend:    'css/src/vendor/',
+    cssDist:    'css/dist/',
+    fontsSrc:   'fonts/src/',
+    fontsVend:  'fonts/src/vendor/',
+    fontsDist:  'fonts/dist/',
+    imagesSrc:  'images/src/',
+    imagesDist: 'images/dist/',
+    bower:      'bower/',
+    grunt:      'config/grunt/',
+    tasks:      'tasks/'
   };
 
   project.paths.global = {
-    config: path.join(__dirname, 'config/'),
-    grunt:  path.join(__dirname, 'config/grunt/'),
-    tasks:  path.join(__dirname, 'tasks/')
+    config: path.join( __dirname, 'config/' ),
+    grunt:  path.join( __dirname, 'config/grunt/' ),
+    tasks:  path.join( __dirname, 'tasks/' )
   };
 
   project.taskMap = {
@@ -41,7 +46,7 @@ module.exports = function() {
   project.files.js = [
     project.paths.jsSrc + '**/*.js',
     '!' + project.paths.jsSrc + '**/*.min.js',
-    '!' + project.paths.jsSrc + 'vendor/'
+    '!' + project.paths.jsVend
   ];
 
   project.files.php = [
@@ -51,7 +56,7 @@ module.exports = function() {
     '!.sass-cache/**',
     '!assets/**',
     '!css/**',
-    '!dist/**',
+    '!release/**',
     '!fonts/**',
     '!images/**',
     '!js/**',

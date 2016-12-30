@@ -4,9 +4,12 @@ module.exports = {
     files: [
       {
         expand: true,
-        cwd: 'images/src/',
-        src: [ '**/*.{png,jpg,jpeg,gif,svg}' ],
-        dest: 'images/'
+        cwd: '<%= paths.imagesSrc %>',
+        src: [
+        	'*',
+        	'**/*'
+        ],
+        dest: '<%= paths.imagesDist %>'
       }
     ]
   }

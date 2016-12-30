@@ -1,3 +1,7 @@
+## 3.0.0
+
+- synced with wpsitecare version of package.
+
 ## 1.5.0
 
 - scss directory moved up and out of css/src to scss/.

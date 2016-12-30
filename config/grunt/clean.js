@@ -1,64 +1,36 @@
 // https://github.com/gruntjs/grunt-contrib-clean
 module.exports = {
-  bower: {
-    src: [
-      '<%= paths.bower %>'
-    ]
-  },
-  bowercomponents: {
-    src: [
-      'bower_components/'
-    ]
-  },
-  composer: {
-    src: [
-      '<%= paths.composer %>'
-    ]
-  },
   css: {
     src: [
-      'css/*',
-      '<%= paths.cssSrc %>vendor/'
-    ]
-  },
-  dist: {
-    src: [
-      '<%= paths.dist %>'
+      '<%= paths.cssDist %>',
+      '<%= paths.cssVend %>'
     ]
   },
   fonts: {
     src: [
-      'font/*',
-      '!<%= paths.fontSrc %>**',
-      '<%= paths.fontSrc %>vendor/'
-    ]
-  },
-  php: {
-    src: [
-      'includes/vendor/'
-    ]
-  },
-  tmp: {
-    src: [
-      '<%= paths.tmp %>'
+    	'<%= paths.fontsDist %>',
+    	'<%= paths.fontsVend %>'
     ]
   },
   js: {
     src: [
-      'js/*.js',
-      'js/**/*.min.js',
-      '<%= paths.jsSrc %>vendor/'
+    	'<%= paths.jsDist %>',
+    	'<%= paths.jsVend %>'
     ]
   },
   images: {
     src: [
-      'images/*',
-      '!<%= paths.imagesSrc %>**'
+    	'<%= paths.imagesDist %>'
     ]
   },
   languages: {
     src: [
       '<%= paths.languages %>*.pot'
     ]
+  },
+  release: {
+  	src: [
+  		'<%= paths.release %>'
+  	]
   }
 };
