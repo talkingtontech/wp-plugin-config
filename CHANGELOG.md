@@ -1,6 +1,11 @@
 ## 3.0.0
 
-- synced with wpsitecare version of package.
+- synced with wpsitecare/sitecare-plugin-config@103fb88)
+- Bumped all dependencies to the latest version
+- Changed default directory structure
+- Removed grunt-shell
+- Removed Bower dependency
+- Removed Composer dependency
 
 ## 1.5.0
 
