@@ -1,6 +1,6 @@
 ## 3.0.0
 
-- synced with wpsitecare/sitecare-plugin-config@103fb88)
+- synced with wpsitecare/sitecare-plugin-config@103fb88
 - Bumped all dependencies to the latest version
 - Changed default directory structure
 - Removed grunt-shell
