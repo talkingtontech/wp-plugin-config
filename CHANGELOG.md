@@ -1,4 +1,4 @@
-## 4.0.1
+## 4.0.2
 
 - synced with wpsitecare/sitecare-plugin-config@93bc00e
 - Bumped all dependencies to the latest version
