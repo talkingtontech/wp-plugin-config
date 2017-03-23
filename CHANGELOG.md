@@ -1,7 +1,8 @@
-## 4.0.0
+## 4.0.1
 
 - synced with wpsitecare/sitecare-plugin-config@93bc00e
 - Bumped all dependencies to the latest version
+- Dropped support for Bower in favor of using npm for all asset dependencies
 - Changed default directory structure
 
 ## 3.0.0
