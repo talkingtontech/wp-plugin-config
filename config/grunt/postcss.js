@@ -20,14 +20,14 @@ module.exports = {
     },
     plugin: {
         expand: true,
-        cwd: '<%= paths.cssDist %>',
+        cwd: '<%= paths.css %>',
         src: [
             '*.css',
             '**/*.css',
             '!*.min.css',
             '!**/*.min.css'
         ],
-        dest: '<%= paths.cssDist %>',
+        dest: '<%= paths.css %>',
         ext: '.css',
         extDot: 'last'
     }

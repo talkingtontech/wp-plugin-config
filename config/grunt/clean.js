@@ -2,35 +2,41 @@
 module.exports = {
     css: {
         src: [
-            '<%= paths.cssDist %>',
+            '<%= paths.css %>',
             '<%= paths.cssVend %>'
         ]
     },
     fonts: {
         src: [
-            '<%= paths.fontsDist %>',
+            '<%= paths.fonts %>',
             '<%= paths.fontsVend %>'
+        ]
+    },
+    php: {
+        src: [
+            '<%= paths.phpVend %>'
         ]
     },
     js: {
         src: [
-            '<%= paths.jsDist %>',
+            '<%= paths.js %>',
             '<%= paths.jsVend %>'
         ]
     },
     images: {
         src: [
-            '<%= paths.imagesDist %>'
+            '<%= paths.images %>',
+            '<%= paths.imagesVend %>'
         ]
     },
     languages: {
         src: [
-            '<%= paths.languages %>*.pot'
+            '<%= paths.languages %>'
         ]
     },
-    release: {
+    dist: {
         src: [
-            '<%= paths.release %>'
+            '<%= paths.dist %>'
         ]
     }
 };

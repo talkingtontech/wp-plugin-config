@@ -6,14 +6,14 @@ module.exports = {
     },
     style: {
         expand: true,
-        cwd: '<%= paths.cssDist %>',
+        cwd: '<%= paths.css %>',
         src: [
             '*.css',
             '**/*.css',
             '!*.min.css',
             '!**/*.min.css'
         ],
-        dest: '<%= paths.cssDist %>',
+        dest: '<%= paths.css %>',
         ext: '.min.css',
         extDot: 'last'
     }

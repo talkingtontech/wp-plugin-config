@@ -11,12 +11,12 @@ module.exports = {
         files: [
             {
                 expand: true,
-                cwd: '<%= paths.jsDist %>',
+                cwd: '<%= paths.js %>',
                 src: [
                     '**/*.js',
                     '!**/*.min.js'
                 ],
-                dest: '<%= paths.jsDist %>',
+                dest: '<%= paths.js %>',
                 ext: '.min.js',
                 extDot: 'last'
             }

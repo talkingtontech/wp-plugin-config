@@ -9,7 +9,7 @@ module.exports = {
     },
     plugin: {
         expand: true,
-        cwd: '<%= paths.cssDist %>',
+        cwd: '<%= paths.css %>',
         src: [
             '*.css',
             '**/*.css',
@@ -18,7 +18,7 @@ module.exports = {
             '!*.min.css',
             '!**/*.min.css'
         ],
-        dest: '<%= paths.cssDist %>',
+        dest: '<%= paths.css %>',
         ext: '-rtl.css',
         extDot: 'last'
     }
