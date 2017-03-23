@@ -1,71 +1,72 @@
 /* global require, __dirname */
-module.exports = function() {
-  'use strict';
+module.exports = function () {
+    'use strict';
 
-  var path = require('path');
-  var project = {};
+    var path = require('path');
+    var project = {};
 
-	project.paths = {
-		config:     'config/',
-		assets:     'assets/',
-		languages:  'languages/',
-		release:    'release/',
-		jsSrc:      'js/src/',
-		jsVend:     'js/src/vendor/',
-		jsDist:     'js/dist/',
-		cssSrc:     'css/src/',
-		cssVend:    'css/src/vendor/',
-		cssDist:    'css/dist/',
-		fontsSrc:   'fonts/src/',
-		fontsVend:  'fonts/src/vendor/',
-		fontsDist:  'fonts/dist/',
-		imagesSrc:  'images/src/',
-		imagesDist: 'images/dist/',
-		bower:      'bower/',
-		grunt:      'config/grunt/',
-		tasks:      'tasks/'
-	};
+    project.paths = {
+        config: 'config/',
+        assets: 'assets/',
+        languages: 'languages/',
+        release: 'release/',
+        jsSrc: 'assets/plugin/js/',
+        jsVend: 'js/vendor/',
+        jsDist: 'js/',
+        cssSrc: 'scss/',
+        cssDist: 'css/',
+        cssVend: 'css/vendor/',
+        fontsSrc: 'assets/plugin/fonts/',
+        fontsDist: 'fonts/',
+        fontsVend: 'fonts/vendor/',
+        imagesSrc: 'assets/plugin/images/',
+        imagesDist: 'images/',
+        imagesVend: 'images/vendor/',
+        bower: 'assets/bower/',
+        grunt: 'config/grunt/',
+        tasks: 'tasks/'
+    };
 
-  project.paths.global = {
-    config: path.join( __dirname, 'config/' ),
-    grunt:  path.join( __dirname, 'config/grunt/' ),
-    tasks:  path.join( __dirname, 'tasks/' )
-  };
+    project.paths.global = {
+        config: path.join(__dirname, 'config/'),
+        grunt: path.join(__dirname, 'config/grunt/'),
+        tasks: path.join(__dirname, 'tasks/')
+    };
 
-  project.taskMap = {
-    addtextdomain: 'grunt-wp-i18n',
-    makepot:       'grunt-wp-i18n',
-    readpkg:       'ttech-wp-plugin-config'
-  };
+    project.taskMap = {
+        addtextdomain: 'grunt-wp-i18n',
+        readpkg: 'ttech-wp-plugin-config',
+        makepot: 'grunt-wp-i18n'
+    };
 
-	project.files = {
-		scss:   project.paths.cssSrc  + '**/*.scss',
-		images: project.paths.imagesSrc  + '**/*',
-		config: project.paths.config  + '**/*.js'
-	};
+    project.files = {
+        scss: project.paths.cssSrc + '**/*.scss',
+        images: project.paths.imagesSrc + '**/*',
+        config: project.paths.config + '**/*.js'
+    };
 
-	project.files.js = [
-		project.paths.jsSrc + '**/*.js',
-		'!' + project.paths.jsSrc + '**/*.min.js',
-		'!' + project.paths.jsVend
-	];
+    project.files.js = [
+        project.paths.jsSrc + '**/*.js',
+        '!' + project.paths.jsSrc + '**/*.min.js',
+        '!' + project.paths.jsVend
+    ];
 
-  project.files.php = [
-    '*.php',
-    '**/*.php',
-    '!.git/**',
-    '!.sass-cache/**',
-    '!assets/**',
-    '!css/**',
-    '!release/**',
-    '!fonts/**',
-    '!images/**',
-    '!js/**',
-    '!languages/**',
-    '!bower_components/**',
-    '!node_modules/**',
-    '!tmp/**'
-  ];
+    project.files.php = [
+        '*.php',
+        '**/*.php',
+        '!.git/**',
+        '!.sass-cache/**',
+        '!assets/**',
+        '!css/**',
+        '!release/**',
+        '!fonts/**',
+        '!images/**',
+        '!js/**',
+        '!languages/**',
+        '!bower_components/**',
+        '!node_modules/**',
+        '!tmp/**'
+    ];
 
-  return project;
+    return project;
 };
