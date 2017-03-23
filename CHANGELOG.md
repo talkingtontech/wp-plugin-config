@@ -1,3 +1,9 @@
+## 4.0.0
+
+- synced with wpsitecare/sitecare-plugin-config@93bc00e
+- Bumped all dependencies to the latest version
+- Changed default directory structure
+
 ## 3.0.0
 
 - synced with wpsitecare/sitecare-plugin-config@103fb88
