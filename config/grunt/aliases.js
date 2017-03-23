@@ -25,21 +25,25 @@ module.exports = function () {
             'replace:packagename',
             'build'
         ],
-        'release': [
+        'package': [
             'build',
-            'copy:release'
+            'compress'
+        ],
+        'package:dev': [
+            'build',
+            'compress:dev'
         ],
         'release:major': [
             'version::major',
-            'release'
+            'package'
         ],
         'release:minor': [
             'version::minor',
-            'release'
+            'package'
         ],
         'release:patch': [
             'version::patch',
-            'release'
+            'package'
         ],
         'default': [
             'watch'
