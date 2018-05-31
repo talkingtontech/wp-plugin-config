@@ -29,7 +29,8 @@ module.exports = {
                     '!gruntfile.js',
                     '!package.json',
                     '!.jscsrc',
-                    '!.jshintrc'
+                    '!.jshintrc',
+                    '<%= paths.assets %>plugin/js/admin/**'
                 ],
                 dest: '<%= package.name %>'
             }
